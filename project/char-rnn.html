@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>autoSmry</title>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #00688B;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-seaside-dark.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.41" />
+
+
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108447989-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-108447989-1');
+        </script>
+
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADm5uYAAAAAAM/PzwDo6OgA////ALq6ugDMzMwAgICAAJSUlADy8vIA29vbAL29vQCPj48ApqamAAAAAAAAAAAAGBERERERERFUURERERERERoRERERERERERiBERERERERUAURERERERFURRdxERERERqhe7d3cRERERHGa7u8ERERHWM2ZmbRERFTOZMzM1EREVmUSZmTURERFUREREmVERERVEREREUREREkRURKoRERERqhqqERERERERERERG//wAAH/8AAL//AADn/wAAw/8AAMJ/AADkBwAA/AMAAPgBAADwAQAA8AEAAPgAAAD8AAAA/AEAAP5HAAD//wAA" rel="icon" type="image/x-icon" />
+
+    </head>
+
+    <body>
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">autoSmry</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+
+                        <ul class="nav navbar-nav">
+
+                                <li><a href="/">Home</a></li>
+
+                                <li><a href="/post/">Posts</a></li>
+
+                                <li><a href="/project/">Projects</a></li>
+
+                                <li><a href="/about/bruce.meng/">About</a></li>
+
+                        </ul>
+
+
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                                <li class="navbar-icon"><a href="mailto:bruce.meng@alumni.utoronto.ca"><i class="fa fa-envelope-o"></i></a></li>
+
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/bruce-meng/"><i class="fa fa-linkedin"></i></a></li>
+
+                                <li class="navbar-icon"><a href="https://twitter.com/BManalyst"><i class="fa fa-twitter"></i></a></li>
+
+                                <li class="navbar-icon"><a href="https://www.brucemeng.ca/feed.xml"><i class="fa fa-rss"></i></a></li>
+
+                        </ul>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+
+
+
+
+
+
+
+    <h4><a href="/project/autosmry/">autoSmry</a></h4>
+    <h5>A lightweight, modern-looking, automatic text summarizer</h5>
+     <kbd class="item-tag">bot</kbd>  <kbd class="item-tag">nlp</kbd>  <kbd class="item-tag">text</kbd>
+
+</div>
+
+
+    <br> <div class="text-justify"><p>Please wait…</p>
+<p>The bot is loading…</p>
+<!-- Code to make iframe go fullscreen -->
+<!-- https://stackoverflow.com/questions/5867985/full-screen-iframe-with-a-height-of-100 -->
+<body style="margin:20px;padding:0px;overflow:hidden">
+<iframe src="https://bruce-meng.shinyapps.io/autosmry/" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:95%;width:100%;position:absolute;top:50px;left:0px;right:0px;bottom:0px" height="100%" width="100%">
+</iframe>
+</body>
+<script> $(function() {
+    $("footer").hide();
+});</script>
+</div>
+
+
+
+
+
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+
+
+
+
+
+
+
+    <h4><a href="/post/autosmry-test/">Auto text summarization (autoSmry)</a></h4>
+    <h5>May 26, 2018</h5>
+     <kbd class="item-tag">text</kbd>  <kbd class="item-tag">nlp</kbd>  <kbd class="item-tag">R</kbd>  <kbd class="item-tag">bot</kbd>  <kbd class="item-tag">fun</kbd>
+
+</div>
+  <div class="item">
+
+
+
+
+
+
+
+
+    <h4><a href="/post/check-out-sn2-d2/">Check out SN2-D2 (a friendly lil sentiment droid)!</a></h4>
+    <h5>April 5, 2018</h5>
+     <kbd class="item-tag">fun</kbd>  <kbd class="item-tag">cool</kbd>  <kbd class="item-tag">bot</kbd>
+
+</div>
+
+
+
+
+
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; Bruce Meng. All rights reserved.</p>
+
+        </footer>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+
+    </body>
+
+</html>
+
