@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohamed Abdulaziz</title>
+</head>
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 70%;
+    color: #777;
+    line-height: 0;
+}
+
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../images/nazim.jpg');
+    min-height: 100%;
+}
+@media (max-width: 991px) {
+  .bgimg-1 {
+      background-image: url('images/cover.png');
+      min-height: 100%;
+  }
+}
+}
+</style>>
+
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">Nâzım <span class="w3-hide-small">Hikmet Poetry Generator</span></span>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container">
+  <div class="w3-row w3-section">
+    <div class="m4 w3-container">
+    <div class="m8 w3-panel">
+      <div class="w3-large">
+        <p class="w3-xxlarge"><i class="fa fa-pencil"></i> Nâzım needs your inspiration!</p>
+      </div>
+      <form action="/post_field" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-full">
+                <input class="w3-input w3-border" type="text" name="prefix" placeholder="Write a word or two here...">
+            </div>
+        </div>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+
+      </form>
+      <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + 'mo.hassaniv' + '@' + 'gmail' + '.' + 'com');
+      </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>
