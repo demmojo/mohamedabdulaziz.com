@@ -58,34 +58,6 @@ body, html {
     }
 }
 </style>
-<script src="scripts/jquery.min.js"></script>
-<script async>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -113,10 +85,10 @@ $(document).ready(function(){
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="static/CV.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
+    <a href="#about" class="w3-bar-item w3-button w3-dark-grey" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-dark-grey" onclick="toggleFunction()"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-dark-grey" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="static/CV.pdf" class="w3-bar-item w3-button w3-dark-grey" onclick="toggleFunction()"><i class="fa fa-file-text"></i> CV</a>
   </div>
 </div>
 
@@ -230,6 +202,7 @@ $(document).ready(function(){
   </div>
 </div>
 
+<script src="scripts/jquery.min.js"></script>
 <script async>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -255,7 +228,30 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
