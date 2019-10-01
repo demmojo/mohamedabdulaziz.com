@@ -8,18 +8,18 @@ We will configure Nginx so that it will pass web requests to the socket file in 
 
 First we will create a server block configuration file:
 ```
-sudo nano /etc/nginx/sites-available/shakespeare
+sudo nano /etc/nginx/sites-available/mohamedabdulaziz.com
 ```
 
 Copy the below text and paste it. Make sure to change any values specific to your own project, server IP and server/PC directory paths.
-```
+
 ### Configure Nginx and place in the following directory: /etc/nginx/sites-available
 
 We will configure Nginx so that it will pass web requests to the socket file in the project directory.
 
 First we will create a server block configuration file:
 ```
-sudo nano /etc/nginx/sites-available/shakespeare
+sudo nano /etc/nginx/sites-available/mohamedabdulaziz.com
 ```
 
 Copy the below text and paste it. Make sure to change any values specific to your own project, server IP and server/PC directory paths.
@@ -65,11 +65,10 @@ You can see a demo of the project here:
 ```
 https://mohamedabdulaziz.com
 ```
-```
 
 To enable the Nginx server block configuration we've just created, link the file to the sites-enabled directory:
 ```
-sudo ln -s /etc/nginx/sites-available/shakespeare /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/mohamedabdulaziz.com /etc/nginx/sites-enabled
 ```
 
 Test for syntax errors:
@@ -89,6 +88,6 @@ sudo ufw allow 'Nginx Full'
 
 You can see a demo of the project here:
 ```
-https://shakespeare.mohamedabdulaziz.com
+https://mohamedabdulaziz.com
 ```
 To view a live demo, [click here](https://www.mohamedabdulaziz.com/).
